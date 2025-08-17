@@ -36,7 +36,7 @@ export default function Header() {
           <nav className="hidden lg:flex items-center justify-center" aria-label="Main Navigation">
             <ul className="flex items-center gap-6 text-base font-bold" style={{ fontFamily: "'Product Sans','Segoe UI',sans-serif" }}>
               <li>
-                <Link href="/features" className="hover:text-gray-300">
+                <Link href="/#features" className="hover:text-gray-300">
                   FEATURES
                 </Link>
               </li>
@@ -111,7 +111,7 @@ export default function Header() {
                 onClick={(e) => e.stopPropagation()}
               >
                 <motion.li variants={itemVariants}>
-                  <Link href="/features" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>
+                  <Link href="/#features" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>
                     FEATURES
                   </Link>
                 </motion.li>

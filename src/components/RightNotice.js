@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 
-export default function RightNotice() {
+export default function RightNotice({ position = 'fixed' }) {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
@@ -15,7 +15,7 @@ export default function RightNotice() {
           animate={{ opacity: 1, x: 0, scaleY: 1 }}
           exit={{ opacity: 0, x: 80, scaleY: 0.95 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="fixed right-4 bottom-4 md:right-20 md:bottom-4 z-40 w-[90vw] sm:w-[360px] md:w-[460px] lg:w-[520px] max-w-[95vw] max-h-[65vh] sm:max-h-[50vh] shadow-xl rounded-lg overflow-hidden"
+          className={`${position} right-4 bottom-4 md:right-20 md:bottom-4 z-40 w-[90vw] sm:w-[360px] md:w-[460px] lg:w-[520px] max-w-[95vw] max-h-[65vh] sm:max-h-[50vh] shadow-xl rounded-lg overflow-hidden`}
           style={{ background: 'linear-gradient(90deg, #bf232e -20%, #000 140%)', transformOrigin: 'bottom right' }}
           aria-live="polite"
         >
