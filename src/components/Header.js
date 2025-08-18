@@ -51,6 +51,16 @@ export default function Header() {
                 </Link>
               </li>
               <li>
+                <Link href="/activate-device" className="hover:text-gray-300 whitespace-nowrap">
+                  ACTIVATE DEVICE
+                </Link>
+              </li>
+              <li>
+                <Link href="/manage-playlists" className="hover:text-gray-300 whitespace-nowrap">
+                  MANAGE PLAYLISTS
+                </Link>
+              </li>
+              <li>
                 <Link href="/support" className="hover:text-gray-300">
                   SUPPORT
                 </Link>
@@ -123,6 +133,16 @@ export default function Header() {
                 <motion.li variants={itemVariants}>
                   <Link href="/downloads" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>
                     DOWNLOADS
+                  </Link>
+                </motion.li>
+                <motion.li variants={itemVariants}>
+                  <Link href="/activate-device" className="hover:text-gray-300 whitespace-nowrap" onClick={() => setIsOpen(false)}>
+                    ACTIVATE DEVICE
+                  </Link>
+                </motion.li>
+                <motion.li variants={itemVariants}>
+                  <Link href="/manage-playlists" className="hover:text-gray-300 whitespace-nowrap" onClick={() => setIsOpen(false)}>
+                    MANAGE PLAYLISTS
                   </Link>
                 </motion.li>
                 <motion.li variants={itemVariants}>
