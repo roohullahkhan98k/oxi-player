@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Splash from "../components/Splash";
 import ChatWidget from "../components/ChatWidget";
+import SiteBlock from "../components/SiteBlock";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,11 +27,17 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Splash />
-        <Header />
-        {children}
-        <ChatWidget />
-        <Footer />
+        {process.env.NEXT_PUBLIC_SITE_BLOCKED === 'true' ? (
+          <SiteBlock />
+        ) : (
+          <>
+            <Splash />
+            <Header />
+            {children}
+            <ChatWidget />
+            <Footer />
+          </>
+        )}
       </body>
     </html>
   );
