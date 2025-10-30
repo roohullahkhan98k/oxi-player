@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Phone, Mail, MessageSquare } from 'lucide-react'
+import { Mail, MessageCircle, Send } from 'lucide-react'
 
 export default function Footer() {
 	return (
@@ -19,14 +19,28 @@ export default function Footer() {
 								<Mail size={16} />
 								<span>support@oxi-player.com</span>
 							</li>
-							<li className="flex items-center gap-2">
-								<Phone size={16} />
-								<span>+1 (000) 000‑0000</span>
-							</li>
-							<li className="flex items-center gap-2">
-								<MessageSquare size={16} />
-								<span>Telegram (coming soon)</span>
-							</li>
+						<li className="flex items-center gap-2">
+							<MessageCircle size={16} />
+							<a
+								href="https://wa.me/message/WKDPN6OWJPCGK1"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="hover:underline"
+							>
+								WhatsApp
+							</a>
+						</li>
+						<li className="flex items-center gap-2">
+							<Send size={16} />
+							<a
+								href="https://t.me/+ouYqBtxJIHI4NDQ0"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="hover:underline"
+							>
+								Telegram
+							</a>
+						</li>
 						</ul>
 					</div>
 					<div>
