@@ -38,8 +38,8 @@ export default function RootLayout({ children }) {
             <Footer />
           </>
         )}
-        <iframe 
-  src="http://api.mnomak.com/university/widget/27cb96de-40ea-44e3-a9ae-8c7b3ececa37" 
+<iframe 
+  src="https://api.mnomak.com/university/widget/27cb96de-40ea-44e3-a9ae-8c7b3ececa37" 
   width="380" 
   height="100vh" 
   frameBorder="0" 
