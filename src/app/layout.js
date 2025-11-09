@@ -38,7 +38,26 @@ export default function RootLayout({ children }) {
             <Footer />
           </>
         )}
+        <iframe 
+  src="http://api.mnomak.com/university/widget/27cb96de-40ea-44e3-a9ae-8c7b3ececa37" 
+  width="380" 
+  height="100vh" 
+  frameBorder="0" 
+  scrolling="no"
+  style={{
+    border: 'none',
+    position: 'fixed',
+    right: '0',
+    top: '50%',
+    transform: 'translateY(-50%)',
+    zIndex: 9999,
+    width: '380px',
+    height: '100vh'
+  }}
+  title="University Navigation Widget"
+/>
       </body>
+      
     </html>
   );
 }
