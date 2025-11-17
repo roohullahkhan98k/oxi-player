@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
           </>
         )}
 <iframe 
-  src="https://api.mnomak.com/university/widget/cc70c491-86fc-48dd-bb70-e32efbe57394" 
+  src="https://api.mnomak.com/university/widget/27cb96de-40ea-44e3-a9ae-8c7b3ececa37" 
   width="380" 
   height="100vh" 
   frameBorder="0" 
